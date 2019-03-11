@@ -1,0 +1,30 @@
+#nav-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-menu li {
+  font-weight: bold;
+  display: inline-block;
+  /* border-width: 3px;
+  border-color: #ccc;
+  border-style: solid; */
+  border: 1px solid #ccc;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  background: url('background.gif');
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+#nav-menu a {
+  text-decoration: none;
+  color: #484a7b;
+}
+
+  #nav-menu a:hover {
+    text-decoration: underline;
+  }
