@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS3</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div id="divR"></div>
+  <form name="f">
+    <textarea name="txtContent"></textarea>
+    <button type="button" onclick="makeBold()">Make BOLD</button>
+  </form>
+
+  <script type="text/javascript">
+    var makeBold = function () {
+      var content = f.txtContent.value;
+      var html = '<b>' + content + '</b>';
+      var divR = document.getElementById('divR');
+      if (divR) {
+        divR.innerHTML = html;
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JS2</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<form name="frmMain">
+		X = <input type="text" name="txtX"><br>
+		Y = <input type="text" name="txtY"><br>
+		S = <input type="text" name="txtS" readonly><br>
+		<button type="button" onclick="sum()">
+			SUM
+		</button>
+	</form>
+	<script type="text/javascript">
+		function sum() {
+			// alert('sum clicked');
+			if (frmMain.txtX.value.length === 0) {
+				alert('please input a valid value');
+				return;
+			}
+			if (isNaN(frmMain.txtX.value)) {
+				alert('please input a valid value');
+				return;
+			}
+			if (frmMain.txtY.value.length === 0) {
+				alert('please input a valid value');
+				return;
+			}
+			var s = parseInt(frmMain.txtX.value) + parseInt(frmMain.txtY.value);
+			frmMain.txtS.value = s;
+		}
+		function onloadHandler() {
+			frmMain.txtX.select();
+		}
+		window.onload = onloadHandler;
+	</script>
+</body>
+
+</html>
